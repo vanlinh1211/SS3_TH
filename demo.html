@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<h1 class="hello">hello</h1>
+<h1 class="hel">bye</h1>
+<button id="button">click</button>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1.hello").hide();
+            // $(this).hide();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<button id="hidden">Hide</button>
+<button id="show">Show</button>
+<p>Three Junior Blues had the chance to play a different type of game with Hazard, Ampadu and Loftus-Cheek! Which team
+    do you think won?
+</p>
+<script>
+    $(document).ready(function () {
+        $("#hidden").click(function () {
+            $("p").hide();
+        });
+        $("#show").click(function () {
+            $("p").animate({left: '100px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'}, "slow").show();
+        });
+    });
+</script>
+</body>
+</html>
